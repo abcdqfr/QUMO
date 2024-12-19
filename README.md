@@ -23,7 +23,13 @@ A next-generation code optimization framework that combines quantum-inspired pat
 ## Installation
 
 ```bash
-pip install qumo
+# From GitHub
+git clone https://github.com/abcdqfr/qumo.git
+cd qumo
+pip install -e .
+
+# Or via pip
+pip install git+https://github.com/abcdqfr/qumo.git
 ```
 
 ## Usage

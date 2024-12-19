@@ -2,7 +2,10 @@
 name = "qumo"
 version = "0.1.0"
 description = "Quantum Unicode Machine Optimizer - A next-generation code optimization framework"
-authors = [{ name = "Brandon" }]
+authors = [{ name = "abcdqfr" }]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/abcdqfr/QUMO"
 dependencies = [
     "astroid>=3.0.1",
     "libcst>=1.1.0",
