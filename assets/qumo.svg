@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Quantum circle background -->
+  <circle cx="256" cy="256" r="240" fill="#1a1a1a"/>
+  
+  <!-- Orbital rings -->
+  <g stroke="#6b4fbb" stroke-width="4" fill="none" opacity="0.6">
+    <ellipse cx="256" cy="256" rx="200" ry="100" transform="rotate(0)">
+      <animate attributeName="transform" from="rotate(0)" to="rotate(360)" dur="20s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="256" cy="256" rx="200" ry="100" transform="rotate(60)">
+      <animate attributeName="transform" from="rotate(60)" to="rotate(420)" dur="15s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="256" cy="256" rx="200" ry="100" transform="rotate(120)">
+      <animate attributeName="transform" from="rotate(120)" to="rotate(480)" dur="25s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <!-- Spider body -->
+  <g id="spider" fill="#ffffff">
+    <!-- Head -->
+    <circle cx="256" cy="236" r="30"/>
+    <!-- Body -->
+    <ellipse cx="256" cy="296" rx="40" ry="50"/>
+    
+    <!-- Legs (4 pairs) with quantum symbols -->
+    <g stroke="#ffffff" stroke-width="6" fill="none">
+      <!-- Front legs -->
+      <path d="M226,236 Q186,216 156,186">
+        <animate attributeName="d" 
+                 values="M226,236 Q186,216 156,186;M226,236 Q186,226 156,196;M226,236 Q186,216 156,186" 
+                 dur="4s" repeatCount="indefinite"/>
+      </path>
+      <path d="M286,236 Q326,216 356,186">
+        <animate attributeName="d" 
+                 values="M286,236 Q326,216 356,186;M286,236 Q326,226 356,196;M286,236 Q326,216 356,186" 
+                 dur="4s" repeatCount="indefinite"/>
+      </path>
+      
+      <!-- Middle legs -->
+      <path d="M216,266 Q166,266 126,266">
+        <animate attributeName="d" 
+                 values="M216,266 Q166,266 126,266;M216,266 Q166,276 126,276;M216,266 Q166,266 126,266" 
+                 dur="4s" repeatCount="indefinite"/>
+      </path>
+      <path d="M296,266 Q346,266 386,266">
+        <animate attributeName="d" 
+                 values="M296,266 Q346,266 386,266;M296,266 Q346,276 386,276;M296,266 Q346,266 386,266" 
+                 dur="4s" repeatCount="indefinite"/>
+      </path>
+      
+      <!-- Back legs -->
+      <path d="M226,296 Q186,326 156,356">
+        <animate attributeName="d" 
+                 values="M226,296 Q186,326 156,356;M226,296 Q186,336 156,366;M226,296 Q186,326 156,356" 
+                 dur="4s" repeatCount="indefinite"/>
+      </path>
+      <path d="M286,296 Q326,326 356,356">
+        <animate attributeName="d" 
+                 values="M286,296 Q326,326 356,356;M286,296 Q326,336 356,366;M286,296 Q326,326 356,356" 
+                 dur="4s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    
+    <!-- Quantum symbols on body -->
+    <g fill="#6b4fbb">
+      <text x="246" y="246" font-family="serif" font-size="24">ψ</text>
+      <text x="256" y="286" font-family="serif" font-size="20">⟨·⟩</text>
+      <text x="266" y="306" font-family="serif" font-size="24">⊗</text>
+    </g>
+  </g>
+</svg> 
