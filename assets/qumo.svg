@@ -22,57 +22,57 @@
     </ellipse>
   </g>
 
-  <!-- Spider body with a more modern design -->
-  <g id="spider" fill="#ffffff">
+  <!-- Spider body with absolute positioning -->
+  <g id="spider" fill="#ffffff" transform="translate(256, 296)">
     <!-- Head -->
-    <circle cx="256" cy="236" r="30" fill="#6b4fbb"/>
+    <circle cx="0" cy="-60" r="30" fill="#6b4fbb"/>
     <!-- Body -->
-    <ellipse cx="256" cy="296" rx="40" ry="50" fill="#6b4fbb"/>
+    <ellipse cx="0" cy="0" rx="40" ry="50" fill="#6b4fbb"/>
     
     <!-- Legs (4 pairs) with quantum symbols -->
-    <g stroke="#ffffff" stroke-width="6" fill="none">
+    <g stroke="#6b4fbb" stroke-width="6" fill="none">
       <!-- Front legs -->
-      <path d="M226,236 Q186,216 156,186" stroke="#6b4fbb">
+      <path d="M-30,-60 Q-70,-80 -100,-110">
         <animate attributeName="d" 
-                 values="M226,236 Q186,216 156,186;M226,236 Q186,226 156,196;M226,236 Q186,216 156,186" 
+                 values="M-30,-60 Q-70,-80 -100,-110;M-30,-60 Q-70,-70 -100,-100;M-30,-60 Q-70,-80 -100,-110" 
                  dur="4s" repeatCount="indefinite"/>
       </path>
-      <path d="M286,236 Q326,216 356,186" stroke="#6b4fbb">
+      <path d="M30,-60 Q70,-80 100,-110">
         <animate attributeName="d" 
-                 values="M286,236 Q326,216 356,186;M286,236 Q326,226 356,196;M286,236 Q326,216 356,186" 
+                 values="M30,-60 Q70,-80 100,-110;M30,-60 Q70,-70 100,-100;M30,-60 Q70,-80 100,-110" 
                  dur="4s" repeatCount="indefinite"/>
       </path>
       
       <!-- Middle legs -->
-      <path d="M216,266 Q166,266 126,266" stroke="#6b4fbb">
+      <path d="M-40,0 Q-80,0 -120,0">
         <animate attributeName="d" 
-                 values="M216,266 Q166,266 126,266;M216,266 Q166,276 126,276;M216,266 Q166,266 126,266" 
+                 values="M-40,0 Q-80,0 -120,0;M-40,0 Q-80,10 -120,10;M-40,0 Q-80,0 -120,0" 
                  dur="4s" repeatCount="indefinite"/>
       </path>
-      <path d="M296,266 Q346,266 386,266" stroke="#6b4fbb">
+      <path d="M40,0 Q80,0 120,0">
         <animate attributeName="d" 
-                 values="M296,266 Q346,266 386,266;M296,266 Q346,276 386,276;M296,266 Q346,266 386,266" 
+                 values="M40,0 Q80,0 120,0;M40,0 Q80,10 120,10;M40,0 Q80,0 120,0" 
                  dur="4s" repeatCount="indefinite"/>
       </path>
       
       <!-- Back legs -->
-      <path d="M226,296 Q186,326 156,356" stroke="#6b4fbb">
+      <path d="M-30,60 Q-70,80 -100,110">
         <animate attributeName="d" 
-                 values="M226,296 Q186,326 156,356;M226,296 Q186,336 156,366;M226,296 Q186,326 156,356" 
+                 values="M-30,60 Q-70,80 -100,110;M-30,60 Q-70,70 -100,100;M-30,60 Q-70,80 -100,110" 
                  dur="4s" repeatCount="indefinite"/>
       </path>
-      <path d="M286,296 Q326,326 356,356" stroke="#6b4fbb">
+      <path d="M30,60 Q70,80 100,110">
         <animate attributeName="d" 
-                 values="M286,296 Q326,326 356,356;M286,296 Q326,336 356,366;M286,296 Q326,326 356,356" 
+                 values="M30,60 Q70,80 100,110;M30,60 Q70,70 100,100;M30,60 Q70,80 100,110" 
                  dur="4s" repeatCount="indefinite"/>
       </path>
     </g>
     
     <!-- Quantum symbols on body -->
     <g fill="#6b4fbb">
-      <text x="246" y="246" font-family="serif" font-size="24">ψ</text>
-      <text x="256" y="286" font-family="serif" font-size="20">⟨·⟩</text>
-      <text x="266" y="306" font-family="serif" font-size="24">⊗</text>
+      <text x="-10" y="-10" font-family="serif" font-size="24">ψ</text>
+      <text x="0" y="30" font-family="serif" font-size="20">⟨·⟩</text>
+      <text x="10" y="50" font-family="serif" font-size="24">⊗</text>
     </g>
   </g>
 </svg>
