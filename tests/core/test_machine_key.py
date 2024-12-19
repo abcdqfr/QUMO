@@ -1,7 +1,7 @@
 """Tests for machine optimization key."""
 
 import pytest
-from src.wallpaperengine.machine_key import MachineOptimizationKey as ᴍᴋ
+from src.qumo.core.machine_key import MachineOptimizationKey as ᴍᴋ
 
 @pytest.fixture
 def key() -> ᴍᴋ:

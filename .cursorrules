@@ -1,0 +1,162 @@
+{
+    "version": "1.0",
+    "name": "QUMO Rules",
+    "description": "Optimization rules and conditions for QUMO operation",
+    
+    "core_rules": {
+        "max_line_length": 88,
+        "indent_size": 4,
+        "unicode_safety": true,
+        "preserve_comments": true,
+        "debug_mode": {
+            "enabled": true,
+            "log_level": "DEBUG",
+            "trace_transformations": true
+        }
+    },
+
+    "optimization_rules": {
+        "patterns": {
+            "min_occurrence_for_optimization": 3,
+            "max_pattern_length": 4,
+            "preserve_readability": true,
+            "excluded_patterns": [
+                "^test_",
+                "^__.*__$",
+                "^main$"
+            ],
+            "pattern_exceptions": {
+                "mathematical_symbols": true,
+                "quantum_operators": true
+            }
+        },
+        "transformations": {
+            "max_depth": 3,
+            "preserve_structure": true,
+            "allow_nested_optimization": false,
+            "progressive_optimization": {
+                "enabled": true,
+                "chunk_size_kb": 100,
+                "delay_between_chunks_ms": 100
+            }
+        }
+    },
+
+    "safety_checks": {
+        "validate_syntax": true,
+        "check_name_collisions": true,
+        "prevent_keyword_optimization": true,
+        "unicode_validation": {
+            "allowed_blocks": [
+                "Mathematical_Operators",
+                "Mathematical_Alphanumeric_Symbols",
+                "Arrows",
+                "Supplemental_Mathematical_Operators",
+                "Miscellaneous_Mathematical_Symbols_A",
+                "Miscellaneous_Mathematical_Symbols_B"
+            ],
+            "forbidden_blocks": [
+                "Emoticons",
+                "Dingbats",
+                "Private_Use_Area",
+                "Supplemental_Symbols_and_Pictographs"
+            ],
+            "allowed_combining_chars": [
+                "COMBINING_OVERLINE",
+                "COMBINING_TILDE",
+                "COMBINING_DOT_ABOVE"
+            ],
+            "whitelisted_symbols": [
+                "∑", "∏", "∫", "∮", "∇", "∆",
+                "ℕ", "ℤ", "ℚ", "ℝ", "ℂ",
+                "⟨", "⟩", "⊗", "⊕", "†"
+            ]
+        }
+    },
+
+    "debugging": {
+        "generate_source_maps": true,
+        "preserve_line_numbers": true,
+        "create_transformation_logs": true,
+        "test_requirements": {
+            "min_test_coverage": 85,
+            "required_test_types": [
+                "unit",
+                "property",
+                "reversibility",
+                "unicode_safety"
+            ],
+            "mock_project_size": {
+                "files": 50,
+                "lines_per_file": 200,
+                "complexity_score": "medium"
+            }
+        }
+    },
+
+    "performance": {
+        "max_file_size_kb": 2000,
+        "optimization_timeout_ms": {
+            "base": 1000,
+            "per_kb": 10,
+            "max": 30000
+        },
+        "cache_patterns": true,
+        "parallel_processing": {
+            "enabled": true,
+            "max_workers": 4,
+            "chunk_size_kb": 100
+        }
+    },
+
+    "integration": {
+        "ide_support": {
+            "show_original_on_hover": true,
+            "provide_quick_fixes": true,
+            "syntax_highlighting": true
+        },
+        "version_control": {
+            "generate_diffs": true,
+            "preserve_git_blame": true
+        }
+    },
+
+    "documentation": {
+        "generate_pattern_docs": true,
+        "include_examples": true,
+        "transformation_explanations": true
+    },
+
+    "test_generation": {
+        "synthetic_codebase": {
+            "enabled": true,
+            "patterns": [
+                "class_definitions",
+                "function_calls",
+                "control_flow",
+                "complex_expressions",
+                "nested_structures",
+                "async_patterns",
+                "context_managers",
+                "decorators",
+                "type_annotations",
+                "comprehensions"
+            ],
+            "complexity_levels": [
+                "simple",
+                "moderate",
+                "complex",
+                "quantum"
+            ],
+            "edge_cases": [
+                "unicode_boundaries",
+                "nested_optimizations",
+                "pattern_conflicts",
+                "reversibility_challenges",
+                "async_sync_mixing",
+                "metaclasses",
+                "dynamic_attributes"
+            ]
+        }
+    }
+} 
