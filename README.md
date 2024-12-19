@@ -8,7 +8,7 @@
 A next-generation code optimization framework that combines quantum-inspired patterns with Unicode optimization to create highly efficient, machine-first Python code. QUMO leverages quantum computing principles, advanced AST/CST transformations, and Unicode patterns to optimize Python code for both machine processing and human readability.
 
 <div align="center">
-  <img src="assets/qumo-demo.gif" alt="QUMO Demo" width="600">
+  <img src="assets/qumo.svg" alt="QUMO Demo" width="600">
 </div>
 
 ## 🌟 Features
